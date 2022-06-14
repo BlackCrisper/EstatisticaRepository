@@ -1,0 +1,11 @@
+dotnet new webapi
+
+dotnet new mstest
+
+dotnet new sln -n EstatisticaSolucion
+
+dotnet sln add .\EstatisticaAPI\EstatisticaAPI.csproj
+
+dotnet sln add .\EstatisticaAPITest\EstatisticaProjeto.csproj
+
+dotnet add .\EstatisticaAPI\EstatisticaAPI.csproj reference .\EstatisticaAPITest\EstatisticaProjeto.csproj
