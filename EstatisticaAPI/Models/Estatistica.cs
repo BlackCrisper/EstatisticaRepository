@@ -32,9 +32,23 @@ namespace EstatisticaAPI.Models
 
         }
 
+        public double mediaVetor(string vet[], int tam) {
+            double media, soma = 0;
+            int i;
 
-      
+            for(i = 0; i < tam; i++)
+            {
+            soma += vet[i];
+            }
+
+            media = soma / tam;
+
+            return media;
+        }
+    }
+
+}
 
         
-    }
-}
+
+
